@@ -47,10 +47,63 @@ const generateMarkdown = (data) => {
   let tableCont = `\n## Table of Contents\n`
   if (data.install) { tableCont += `* [Installation](#installation)\n`; }
   if (data.usage) { tableCont += `* [Usage](#usage)\n`; }
-  if (data.contrib) { tableCont += `* [Contributing](#contributing)\n`; }
+  if (data.contribution) { tableCont += `* [Contribution](#contribution)\n`; }
   if (data.test) { tableCont += `* [Tests](#tests)\n`; }
  
+   // the license copyright date
+   let year = new Date();
+  
+   /*** Generation of ReadME file***/
+   //--------------------------//
+ 
+   // The README title
+   let readmeLayout = `# ${data.title}\n`;
+ 
+   //Add license badge 
+   readmeLayout += `\n${licenseBadge}\n\n---\n`;
+ 
+   //Add the description heading and description body
+   readmeLayout += `\n## Description\n${data.description}\n`;
+ 
+   //Add table of contents per the users input
+   readmeLayout += tableCont;
+ 
+   //Add installation procedures
+   
+   readmeLayout += `\n## Installation\n${data.install}\n`;
+   
+ 
+   //Add User Guide
+   
+   readmeLayout += `\n## Usage\n${data.usage}\n`;
 
-}
+   // Contribution heading and contribution guidelines per users input
+  
+   readmeLayout += `\n## Contribution\n${data.contribution}\n`;
+ 
+
+   //Add usage heading and notes per users input
+  
+   if (data.test) {
+    readmeLayout += `\n## Tests\n${data.testNotes}\n`;
+  }
+  
+
+  //Add a license section
+  readmeLayout += `\n## License \nLicensed under the ${data.license} License. Copyright \u00A9 ${year.getFullYear()}\n`;
+
+ 
+
+  //Add questions section
+  readmeLayout += `\n## Questions\n*For any additional information find me at* \n\nGitHub: [@${data.github}](https://github.com/${data.github}/)\n\nEmail: [${data.email}](mailto:${data.email})\n`;
+
+  
+  return readmeLayout;
+
+}//End of generateMarkDown
+   
+ 
+
+
 
 module.exports = generateMarkdown;

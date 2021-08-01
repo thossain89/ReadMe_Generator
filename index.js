@@ -47,9 +47,9 @@ const questions = [{
         return answers.test;
     }
 },{
-    type:'checkbox',
-    message:'Please select a license for your project?',
-    name:'license',
+    type: 'rawlist',
+    name: 'license',
+    message: 'Which open source license would you like to use? ',
     choices: ['Apache 2.0', 'BSD 2-Clause', 'BSD 3-Clause', 'GNU AGPLv3.0', 'GNU GPLv2.0', 'GNU GPLv3.0', 'MIT', 'Mozilla Public 2.0'],
 
 },{
@@ -77,10 +77,16 @@ const questions = [{
 
 
 // TODO: Create a function to write README file
-const writeToFile = (fileName, data) => {
-    fs.writeFile(fileName, data, (err) =>
-        err ? console.error(err) : console.log(success)
-    );
+function writeToFile (fileName, data) {
+
+    fs.writeFile(fileName, data, function(err) {
+        if(err){
+            return console.error(err)
+            
+        } else {
+            return console.log(`Success ${fileName} has been created!`)
+        }
+    })
 }
 
 
