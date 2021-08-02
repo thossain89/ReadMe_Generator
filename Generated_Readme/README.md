@@ -1,11 +1,11 @@
-# dgsdg
+# Read Me file generator
 
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
 
 ## Description
-sfdsfsg
+Create a professional Readme file.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -14,23 +14,23 @@ sfdsfsg
 * [Tests](#tests)
 
 ## Installation
-dsgdsgsg
+run the index JS in node from any terminal
 
 ## Usage
-asgdsg
+First copy the files into the program you want to create the readme file .Then run it using node on any terminal and answer the following promts.
 
 ## Contribution
-etedvd
+Tanvir Hossain
 
 ## Tests
-hdsahgfjgff
+The generated readme will be available in Generated readme folder.
 
 ## License 
-Licensed under the BSD 3-Clause License. Copyright © 2021
+Licensed under the MIT License. Copyright © 2021
 
 ## Questions
 *For any additional information find me at* 
 
-GitHub: [@fhfdjdj](https://github.com/fhfdjdj/)
+GitHub: [@thossain89](https://github.com/thossain89/)
 
-Email: [t@gmail.com](mailto:t@gmail.com)
+Email: [tanvirhossain2006@gmail.com](mailto:tanvirhossain2006@gmail.com)
