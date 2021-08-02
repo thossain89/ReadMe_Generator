@@ -49,6 +49,8 @@ const generateMarkdown = (data) => {
   if (data.usage) { tableCont += `* [Usage](#usage)\n`; }
   if (data.contribution) { tableCont += `* [Contribution](#contribution)\n`; }
   if (data.test) { tableCont += `* [Tests](#tests)\n`; }
+  if (data.license) { tableCont += `* [License](#license)\n`; }
+  if (data.email) { tableCont += `* [Questions](#questions)\n`; }
  
    // the license copyright date
    let year = new Date();
@@ -85,19 +87,13 @@ const generateMarkdown = (data) => {
    //Add usage heading and notes per users input
   
    if (data.test) {
-    readmeLayout += `\n## Tests\n${data.testNotes}\n`;
+    readmeLayout += `\n## Tests\n${data.testNotes}\n`;  
   }
-  
-
-  //Add a license section
-  readmeLayout += `\n## License \nLicensed under the ${data.license} License. Copyright \u00A9 ${year.getFullYear()}\n`;
-
+   //Add a license section
+   readmeLayout += `\n## License \nLicensed under the ${data.license} License. Copyright \u00A9 ${year.getFullYear()}\n`;
+   //Add questions section
+   readmeLayout += `\n## Questions\n*For any additional information find me at* \n\nGitHub: [@${data.github}](https://github.com/${data.github}/)\n\nEmail: [${data.email}](mailto:${data.email})\n`;
  
-
-  //Add questions section
-  readmeLayout += `\n## Questions\n*For any additional information find me at* \n\nGitHub: [@${data.github}](https://github.com/${data.github}/)\n\nEmail: [${data.email}](mailto:${data.email})\n`;
-
-  
   return readmeLayout;
 
 }//End of generateMarkDown

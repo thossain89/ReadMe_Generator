@@ -1,4 +1,4 @@
-# Read Me file generator
+# ReadMe file generator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -12,18 +12,20 @@ Create a professional Readme file.
 * [Usage](#usage)
 * [Contribution](#contribution)
 * [Tests](#tests)
+* [License](#license)
+* [Questions](#questions)
 
 ## Installation
-run the index JS in node from any terminal
+Run the index JS in node from any terminal.
 
 ## Usage
-First copy the files into the program you want to create the readme file .Then run it using node on any terminal and answer the following promts.
+First copy all the files into the program you want to create the readme file .Then run it using node on any terminal and answer the following questions. 
 
 ## Contribution
-Tanvir Hossain
+You are free to fork the project and contribute to it.
 
 ## Tests
-The generated readme will be available in Generated readme folder.
+run npm test on node.
 
 ## License 
 Licensed under the MIT License. Copyright © 2021

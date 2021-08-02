@@ -12,7 +12,7 @@
 - [Usage](#usage)
 - [Contribution](#contribution)
 - [Test Instructions](#test-instructions)
-- [Licenses](#licenses)
+- [License](#license)
 - [Contact Information](#contact-information)
 
 ## Description
@@ -57,7 +57,9 @@ It will be named `README.md` inside Generated_Readme folder.
 
 ![exampleREADME](./Develop/img/demo.gif)  
 
-You can find full video of how to use it [here](https://drive.google.com/file/d/1V6BelQbXVN2OvE7im2HQYCHchdFKGCq4/view).
+### You can find full video of how to use it [here](https://drive.google.com/file/d/1V6BelQbXVN2OvE7im2HQYCHchdFKGCq4/view).
+
+### You can find sample README.md file [here](./Generated_Readme/README.md)
 
 ## Contribution
 
@@ -67,7 +69,7 @@ If you would like to contribute to this project reach out to me. Contact Informa
 
 run: `npm run test`
 
-## Licenses
+## License
 
 <a href="https://img.shields.io/badge/License-MIT-brightgreen"><img alt="M.I.T. License use" src="https://img.shields.io/badge/License-MIT-brightgreen"></a>
 
